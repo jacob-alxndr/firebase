@@ -1,3 +1,4 @@
+/* eslint-disable */
 let nodeData; // obeject we will push to firebase
 let fbData; // data we pull from firebase
 let fbDataArray; // firebase data values converted to an Array
@@ -48,3 +49,4 @@ function setup() {
 }
 
 function draw() {}
+

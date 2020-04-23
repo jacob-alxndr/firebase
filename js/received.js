@@ -1,3 +1,4 @@
+/* eslint-disable */
 function recievedData(data) {
   // need to retrieve firebase data with val() method
   // this returns an object of all data
