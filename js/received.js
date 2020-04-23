@@ -18,3 +18,19 @@ function errData(err) {
   console.log('error! did not receive data');
   console.log(err);
 }
+
+// create a new node
+// the node folder name, id, and object are all passed in as parameters
+
+function createNode(_nodeFolder, _nodeId, _nodeObject) {
+  firebase
+    .database()
+    .ref(`${_nodeFolder}/${_nodeId}`)
+    .set(_nodeObject);
+
+  // call this function in the web console to create and seed the folder!
+  // createNode(folderName, "seed", {text: "this is to seed folder"});
+  // (to test you can just paste it into the web console)
+}
+
+// createNode(folderName, 'test', { text: 'hello' });
