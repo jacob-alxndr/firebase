@@ -27,10 +27,9 @@ function createNode(_nodeFolder, _nodeId, _nodeObject) {
     .database()
     .ref(`${_nodeFolder}/${_nodeId}`)
     .set(_nodeObject);
-
-  // call this function in the web console to create and seed the folder!
-  // createNode(folderName, "seed", {text: "this is to seed folder"});
-  // (to test you can just paste it into the web console)
 }
+// call this function in the web console to create and seed the folder!
+// createNode(folderName, "seed", {text: "this is to seed folder"});
+// (to test you can just paste it into the web console)
 
 // createNode(folderName, 'test', { text: 'hello' });
