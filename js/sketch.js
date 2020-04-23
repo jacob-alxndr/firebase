@@ -32,7 +32,7 @@ function setup() {
   const ref = database.ref(folderName);
   // **** folderName must be consistant across all calls to this folder
 
-  ref.on('value', gotData, errData);
+  ref.on('value', recievedData, errData);
 
   // ---> To find your config object:
   // They will provide it during Firebase setup
