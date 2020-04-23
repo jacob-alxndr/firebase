@@ -14,4 +14,7 @@ function recievedData(data) {
   }
 }
 
-function errData(err) {}
+function errData(err) {
+  console.log('error! did not receive data');
+  console.log(err);
+}
