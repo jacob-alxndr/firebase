@@ -34,8 +34,8 @@ function createNode(_nodeFolder, _nodeId, _nodeObject) {
     .set(_nodeObject);
 }
 
-const form = document.querySelector('.form');
-const receiveButton = document.querySelector('.receive');
+const form = document.querySelector('form.send');
+const receiveButton = document.querySelector('button.receive');
 
 function sendMessage(e) {
   // e.preventDefault();
@@ -56,7 +56,8 @@ function sendMessage(e) {
   alert('Message Sent');
 }
 
-function receiveMessage() {
+function receiveMessage(e) {
+  e.preventDefault();
   const randomNumber = Math.floor(Math.random() * fbDataArray.length);
   const pTag = document.querySelector('.receivedData');
   console.log(randomNumber);
