@@ -49,7 +49,7 @@ function sendMessage(e) {
 
   console.log(results);
 
-  nodeData = { message: results, timeStamp };
+  nodeData = { message: messageInput.value, timeStamp };
 
   createNode(folderName, timeStamp, nodeData);
 
