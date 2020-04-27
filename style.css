@@ -40,7 +40,7 @@ canvas {
   border-radius: 0.3rem;
   padding: 4rem;
   background-color: var(--black);
-  border: 1px solid var(--white);
+  border: 1px solid greenyellow;
   min-width: 30vw;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ textarea {
   color: var(--white);
   resize: none;
   background-color: var(--black);
-  border: 1px solid var(--white);
+  border: 1px solid greenyellow;
   min-height: 15rem;
   margin-bottom: 2rem;
   padding: 0.5rem 0 0 0.5rem;
@@ -113,20 +113,24 @@ button[type="submit"] {
 
 /* MEDIA QUERIE */
 @media screen and (max-width: 600px) {
+  .messages {
+  }
+
   .container {
     width: 100%;
+    height: 30vh;
   }
 
   .form,
   .wrapper {
     width: 80vw;
-    border: none;
+    /* border: none; */
     padding: 2rem 0;
     align-items: center;
   }
 
   .form textarea {
-    min-height: 100%;
+    /* min-height: 100%; */
     min-width: 85%;
   }
   .receivedData {
