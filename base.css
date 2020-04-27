@@ -147,7 +147,7 @@ h1 {
 }
 
 hr {
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     height: 0;
 }
 
@@ -268,15 +268,6 @@ textarea {
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
-}
-
-summary {
-    display: list-item;
-}
-
-[hidden],
-template {
-    display: none;
 }
 
 a.button,

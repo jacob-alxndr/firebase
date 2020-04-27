@@ -2,18 +2,20 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .messages {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--black);
 }
 
 .container {
-  width: 100vw;
+  width: 50vw;
 
   display: flex;
   flex-direction: column;
@@ -23,11 +25,10 @@ body {
 }
 
 .wrapper {
-  background-color: var(--black);
-  border: 1px solid white;
+  background-color: greenyellow;
   border-radius: 0.3rem;
-  padding: 2rem;
-  min-width: 35rem;
+  padding: 4rem;
+  min-width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,10 +38,12 @@ canvas {
 }
 .form {
   border-radius: 0.3rem;
-  padding: 2rem;
+  padding: 4rem;
   background-color: var(--black);
   border: 1px solid var(--white);
-  min-width: 35rem;
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .form > *:last-child {
@@ -51,10 +54,10 @@ canvas {
   min-height: 10rem;
   display: block;
   padding: 2rem;
-  background-color: var(--black);
-  border: 1px solid var(--white);
+  background-color: greenyellow;
+  border: 1px solid var(--black);
   margin-bottom: 2rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 fieldset {
@@ -73,6 +76,12 @@ label {
   margin-bottom: 2rem;
 }
 
+.wrapper label {
+  font-size: 1.4rem;
+  color: black;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
 input {
   border: none;
 
@@ -86,11 +95,10 @@ textarea {
   color: var(--white);
   resize: none;
   background-color: var(--black);
-  outline: 1px solid var(--white);
+  border: 1px solid var(--white);
   min-height: 15rem;
-  width: 100%;
-  padding: 0;
-  border: 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 button[type="submit"] {
@@ -99,6 +107,34 @@ button[type="submit"] {
 }
 
 .receive {
-  color: var(--black);
-  background-color: greenyellow;
+  color: greenyellow;
+  background-color: var(--black);
+}
+
+/* MEDIA QUERIE */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .form,
+  .wrapper {
+    width: 80vw;
+    border: none;
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  .form textarea {
+    min-height: 100%;
+    min-width: 85%;
+  }
+  .receivedData {
+    min-width: 75%;
+  }
+
+  button[type="submit"],
+  .receive {
+    width: 90%;
+  }
 }
