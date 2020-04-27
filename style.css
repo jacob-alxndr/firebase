@@ -142,6 +142,6 @@ button[type="submit"] {
   button[type="submit"],
   .receive {
     width: 90%;
-    font-size: 90%;
+    /* font-size: 90%; */
   }
 }
