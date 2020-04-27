@@ -1,4 +1,8 @@
 /* eslint-disable */
+
+// DOCS: https://github.com/larkbuck/xsocial/blob/master/README.md
+
+
 let nodeData; // obeject we will push to firebase
 let fbData; // data we pull from firebase
 let fbDataArray; // firebase data values converted to an Array
@@ -29,9 +33,10 @@ function setup() {
   // store database
   database = firebase.database();
 
+
   // this references the folder you want your data to appear in
   const ref = database.ref(folderName);
-  // **** folderName must be consistant across all calls to this folder
+  // **** folderName must be consistent across all calls to this folder
 
   ref.on('value', recievedData, errData);
 
@@ -48,5 +53,5 @@ function setup() {
   // Your web app's Firebase configuration
 }
 
-function draw() {}
+// function draw() {}
 

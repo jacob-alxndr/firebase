@@ -1,7 +1,101 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
+.messages {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--black);
+}
+
+.container {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.wrapper {
+  background-color: var(--black);
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  min-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 canvas {
   display: block;
+}
+.form {
+  border-radius: 0.3rem;
+  padding: 2rem;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  min-width: 35rem;
+}
+
+.form > *:last-child {
+  margin-top: 0.5rem;
+}
+
+.receivedData {
+  min-height: 10rem;
+  display: block;
+  padding: 2rem;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+fieldset {
+  width: 100%;
+  min-height: 1rem;
+  /* padding: 3rem 8rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+label {
+  font-size: 1.4rem;
+  color: greenyellow;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  border: none;
+
+  width: 20rem;
+  height: 3rem;
+  /* padding: 0.5rem 2.9rem; */
+}
+
+textarea {
+  color: var(--white);
+  resize: none;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  min-height: 15rem;
+  padding: 0.6rem;
+}
+
+button[type="submit"] {
+  color: var(--black);
+  background-color: greenyellow;
+}
+
+.receive {
+  color: var(--black);
+  background-color: greenyellow;
 }

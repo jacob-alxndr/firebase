@@ -11,15 +11,42 @@
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
   <script src="libraries/p5.js"></script>
   <script src="libraries/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="base.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
 </head>
 
 <body>
+
+  <section class="messages">
+
+    <div class="container">
+      <form action="" class="form">
+        <fieldset class="">
+          <label for="message">How are you dealing with Quarantine?</label>
+          <textarea required name="message" type="text" placeholder=""></textarea>
+        </fieldset>
+        <button type="submit"> Send Message</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <label>Find out how others are dealing with Quarantine.</label>
+        <p class="receivedData"></p>
+        <button class="receive"> Receive Message</button>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
   <script src="js/sketch.js"></script>
   <script src="js/received.js"></script>
-
-
 </body>
 
 
