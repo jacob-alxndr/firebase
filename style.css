@@ -121,25 +121,25 @@ button[type="submit"] {
     height: 30vh;
   }
 
-  .form,
-  .wrapper {
+  .form {
     width: 80vw;
     /* border: none; */
-    padding: 2rem 0;
+    padding: 1rem;
     align-items: center;
   }
 
   .form textarea {
-    /* min-height: 100%; */
+    min-height: 5rem;
     min-width: 85%;
   }
   .receivedData {
     min-width: 75%;
+    min-height: 5rem;
   }
 
   button[type="submit"],
   .receive {
     width: 90%;
-    font-size: 60%;
+    font-size: 90%;
   }
 }
