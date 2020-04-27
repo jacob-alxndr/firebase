@@ -126,7 +126,7 @@ button[type="submit"] {
   .form {
     width: 80vw;
     /* border: none; */
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     align-items: center;
   }
 
