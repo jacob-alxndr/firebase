@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 30vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,12 +82,15 @@ input {
 }
 
 textarea {
+  display: block;
   color: var(--white);
   resize: none;
   background-color: var(--black);
-  border: 1px solid var(--white);
+  outline: 1px solid var(--white);
   min-height: 15rem;
-  padding: 0.6rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
 }
 
 button[type="submit"] {

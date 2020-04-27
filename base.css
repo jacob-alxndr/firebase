@@ -247,7 +247,8 @@ legend {
 }
 
 textarea {
-    overflow: auto;
+    overflow: none;
+    padding: 0;
 }
 
 [type="number"]::-webkit-inner-spin-button,
