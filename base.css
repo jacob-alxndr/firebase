@@ -282,5 +282,5 @@ input[type="button"] {
     font-weight: 400;
     font-size: 2rem;
     cursor: pointer;
-    width: 100%;
+    /* width: 100%; */
 }

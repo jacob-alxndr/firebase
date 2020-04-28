@@ -11,21 +11,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  background-color: var(--black);
+  /* align-items: center; */
+
+  background-color: greenyellow;
 }
 
 .container {
+  width: 100%;
+  height: 50vh;
+  background-color: peru;
 }
 
 .form {
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
   padding: 4rem;
   background-color: var(--black);
-  border: 1px solid greenyellow;
-  min-width: 35rem;
+  /* border: 1px solid greenyellow; */
+  /* width: 35rem; */
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 canvas {
@@ -37,13 +43,14 @@ canvas {
 }
 
 .receivedData {
+  width: 50%;
   min-height: 10rem;
-  display: block;
+  /* display: block;
   padding: 2rem;
   background-color: var(--black);
   border: 1px solid greenyellow;
   margin-bottom: 2rem;
-  color: var(--white);
+  color: var(--white); */
 }
 
 fieldset {
@@ -85,12 +92,30 @@ textarea {
   min-height: 15rem;
   margin-bottom: 2rem;
   padding: 2rem;
+  width: 50%;
 }
 
 button {
   color: var(--black);
   background-color: greenyellow;
   /* white-space: nowrap; */
+}
+
+.container:nth-child(even) .form {
+  background-color: greenyellow;
+  border: 1px solid var(--black);
+}
+
+.container:nth-child(even) .form label {
+  color: var(--black);
+}
+.container:nth-child(even) .form p {
+  border: none;
+}
+
+.container:nth-child(even) .form button {
+  background-color: var(--black);
+  color: greenyellow;
 }
 
 /* MEDIA QUERIE */
@@ -105,23 +130,6 @@ button {
     width: 100%;
     height: 30vh; */
     background-color: rgb(36, 36, 36);
-  }
-
-  .container:nth-child(even) .form {
-    background-color: greenyellow;
-    border: 1px solid var(--black);
-  }
-
-  .container:nth-child(even) .form label {
-    color: var(--black);
-  }
-  .container:nth-child(even) .form p {
-    border: none;
-  }
-
-  .container:nth-child(even) .form button {
-    background-color: var(--black);
-    color: greenyellow;
   }
 
   .container {
@@ -148,7 +156,7 @@ button {
   .receivedData {
     min-width: 75%;
     min-height: 5rem;
-    background-color: rgb(36, 36, 36);
+    /* background-color: rgb(36, 36, 36); */
   }
 
   button {
