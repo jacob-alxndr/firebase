@@ -10,7 +10,7 @@ body {
   max-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   /* align-items: center; */
 
   background-color: greenyellow;
@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
   background-color: peru;
 }
 
@@ -103,7 +103,7 @@ button {
 
 .container:nth-child(even) .form {
   background-color: greenyellow;
-  border: 1px solid var(--black);
+  /* border: 1px solid var(--black); */
 }
 
 .container:nth-child(even) .form label {
