@@ -108,10 +108,20 @@ button {
   }
 
   .container:nth-child(even) .form {
-    background-color: rgb(36, 36, 36);
+    background-color: greenyellow;
+    border: 1px solid var(--black);
+  }
+
+  .container:nth-child(even) .form label {
+    color: var(--black);
   }
   .container:nth-child(even) .form p {
     border: none;
+  }
+
+  .container:nth-child(even) .form button {
+    background-color: var(--black);
+    color: greenyellow;
   }
 
   .container {
