@@ -30,7 +30,7 @@ function start() {
   // this references the folder you want your data to appear in
   const ref = database.ref(folderName);
   // **** folderName must be consistent across all calls to this folder
-  console.log(ref);
+  // console.log(ref);
   ref.on('value', recievedData, errData);
 
   // ---> To find your config object:
