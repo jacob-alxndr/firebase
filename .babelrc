@@ -1,0 +1,6 @@
+// projectname/.babelrc
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
