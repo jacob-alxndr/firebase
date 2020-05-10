@@ -16,7 +16,6 @@ html, body {
 
 .container {
   background-color: hsla(0, 0%, 100%, 0);
-  border-radius: 0.5rem;
 }
 
 .form {
@@ -31,6 +30,7 @@ html, body {
   font-size: 4rem;
   min-height: 10rem;
   background-color: hsla(0, 0%, 100%, 0);
+  transition: all .5s eas;
 }
 
 fieldset {
@@ -61,7 +61,7 @@ textarea {
   font-size: 4rem;
   border: none;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.281);
-  min-height: 10rem;
+  /* min-height: 20rem; */
   width: 100%;
   transition: border 0.2s ease-in-out;
 }
