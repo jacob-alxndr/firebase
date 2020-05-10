@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "./node_modules/.bin/babel src/js -d dist"
+    "babel": "./node_modules/.bin/babel src/js -d dist/js"
   },
   "repository": {
     "type": "git",
